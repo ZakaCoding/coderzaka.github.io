@@ -1,1 +1,40 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, I'am Zaka</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+    </nav>
+
+    <!-- main -->
+    <div class="main">
+        <div class="text-typing">
+            <h1 id="element"></h1>
+        </div>
+    </div>
+</body>
+
+<!-- script in the end off body -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ["Hello, I'm Zaka ^1000","Hello, I'm a programmer ^1000", "I focus on web development ^2000"],
+        // smartBackspace : true,
+        typeSpeed: 50,
+        backSpeed: 15,
+        loop : true,
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true
+    });
+</script>
+</html>
