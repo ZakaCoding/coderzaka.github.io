@@ -1,0 +1,19 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    width: 100vh;
+    height: 100vh;
+    margin:0px;
+    padding:0px;
+}
+
+.text-typing {
+    display: flex;
+}
+
+h1 {
+    font-family:'consolas';
+}
