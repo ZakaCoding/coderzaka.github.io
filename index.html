@@ -7,13 +7,28 @@
     <title>Hello, I'm Zaka</title>
     <!-- Link CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="vendor/hamburgers/dist/hamburgers.css">
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 <body>
-    <!-- navigation -->
-    <nav>
+    <!-- navigation menu -->
+    <nav role="navigation">
+        <!-- hamburger menu -->
+        <button type="button" id="hamburger" class="hamburger hamburger--elastic">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <!-- menu with pure css ! -->
+        <div class="menuToggle">
+            <ul class="menu">
+                <!-- <a href="#"></a> -->
+                Nothing happen here :(
+            </ul>
+        </div>
     </nav>
 
     <!-- main -->
@@ -26,6 +41,7 @@
 
 <!-- script in the end off body -->
 <script>
+    // typed.js
     var typed = new Typed('#element', {
         strings: ["Hello, I'm Zaka ^2000","Hello, I'm a programmer ^1000", "I focus on web development ^2500"],
         // smartBackspace : true,
@@ -35,6 +51,22 @@
         showCursor: true,
         cursorChar: '|',
         autoInsertCss: true
+    });
+
+    // here for hamburger :)
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    // Look for #menuToggle
+    var menu = document.querySelector(".menuToggle")
+
+    // On click even
+    hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+
+        // Something else, like open/close menu
+        // Toggle class "menu-active"
+        menu.classList.toggle("menu-active");
     });
 </script>
 </html>
