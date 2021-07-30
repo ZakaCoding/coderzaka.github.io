@@ -22,6 +22,11 @@ html,body {
     position:relative;
 }
 
+.wrapper {
+    max-width: 950px;
+    margin:auto;
+}
+
 .text-typing {
     display:flex;
     justify-content:center;
@@ -31,8 +36,9 @@ html,body {
     transform: translate(-50%,-50%);
 }
 
-h1 {
+h1#element {
     font-family:'consol' !important;
+    height: 111px;
 }
 
 .typed-cursor {
@@ -85,4 +91,35 @@ h1 {
 #hamburger {
     position: absolute;
     z-index: 999;
+}
+
+/* Footer */
+footer {
+    font-family: 'Segoe UI';
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    position: relative;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.social-media {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.social-media a {
+    font-size: 2em !important;
+    color: #000000;
+    cursor: pointer;
+    margin: auto 10px;
+    transition: 0.2s ease;
+}
+.social-media a:hover {
+    color: #7e7e7e;
 }
