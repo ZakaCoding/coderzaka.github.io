@@ -76,8 +76,11 @@ h1#element {
 .menu {
     margin-top: 100px;
     padding-left: 20px;
+    font-family: 'Segoe UI Black';
 }
-
+.menu p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .menu a {
     text-decoration: none;
 
@@ -93,6 +96,38 @@ h1#element {
     z-index: 999;
 }
 
+.form-group-menu {
+    display: block;
+}
+.input-menu {
+    width: 250px;
+    height: 50px;
+    margin: 5px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #eaeaea;
+    border: 0px;
+}
+.btn-menu {
+    font-family: 'Segoe UI Black';
+    width: 100px;
+    margin-top: 5px;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    background-color: #eaeaea;
+    border: 0px;
+    transition: .2s ease-in;
+}
+.btn-menu:hover {
+    background-color: black;
+    color: white;
+}
+
+.spacer {
+    width: 100%;
+    margin: 50px auto;
+}
+
 /* Footer */
 footer {
     font-family: 'Segoe UI';
@@ -106,20 +141,32 @@ footer > p {
     text-align: center;
     font-size: 1em;
 }
+.social-media-menu {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: left;
+}
+.social-media-menu a {
+    font-size: 1.8em !important;
+    color: #000;
+    cursor: pointer;
+    margin: auto 7px;
+}
 
 .social-media {
     width: 100%;
-    margin: auto;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
 .social-media a {
-    font-size: 2em !important;
-    color: #000000;
+    font-size: 1.8em !important;
+    color: #000;
     cursor: pointer;
-    margin: auto 10px;
-    transition: 0.2s ease;
+    margin: auto 7px;
 }
-.social-media a:hover {
-    color: #7e7e7e;
+.icon-deactive {
+    color: #7e7e77 !important;
+    transition: 170ms ease-in-out;
 }

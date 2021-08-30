@@ -18,7 +18,7 @@
 <body>
     <!-- navigation menu -->
     <!-- hamburger menu -->
-    <button type="button" id="hamburger" class="hamburger hamburger--elastic">
+    <button type="button" name="menu button" id="hamburger" class="hamburger hamburger--elastic">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -26,10 +26,11 @@
 
     <!-- menu with pure css ! -->
     <div class="menuToggle">
-        <ul class="menu">
-            <!-- <a href="#"></a> -->
-            Nothing happen here :(
-        </ul>
+        <div class="menu">
+            <h5>
+                There is nothing here
+            </h5>
+        </div>
     </div>
 
     <!-- main -->
@@ -45,20 +46,19 @@
             <!-- social media -->
             <div class="social-media">
                 <a href="https://twitter.com/zaka_coding">
-                    <i class="fab fa-twitter"></i>
+                    <i id="twitter" class="fab fa-twitter social-media-icon"></i>
                 </a>
                 <a href="https://instagram.com/youn8e_">
-                    <i class="fab fa-instagram"></i>
+                    <i id="instagram" class="fab fa-instagram social-media-icon"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/zaka-n-693018111/">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i id="linkedin" class="fab fa-linkedin-in social-media-icon"></i>
                 </a>
             </div>
         </div>
         <!-- Describe -->
         <p>
-            Copyright &copy; 2021 All Right Reserved. Develop with &#10084;&#65039; by Zaka.
-            <br><small>PHP | HTML5 | CSS3 | JavaScript | Full-Stack Developer</small>
+            Copyright &copy; 2021 - Develop with &#10084;&#65039; by Zaka.
         </p>
     </footer>
 </body>
@@ -92,5 +92,45 @@
         // Toggle class "menu-active"
         menu.classList.toggle("menu-active");
     });
+
+    // social media icon hover
+    // animation when cursor hover
+    var twitter = document.getElementById("twitter");
+    var ig = document.getElementById("instagram");
+    var linkedin = document.getElementById("linkedin");
+    var socialMedia = document.querySelector(".social-media-icon");
+    
+    twitter.addEventListener("mouseenter", function() {
+        ig.classList.add("icon-deactive");
+        linkedin.classList.add("icon-deactive");
+    });
+
+    twitter.addEventListener("mouseout", function() {
+        ig.classList.remove("icon-deactive");
+        linkedin.classList.remove("icon-deactive");
+    });
+
+    // Instagram
+    ig.addEventListener("mouseenter", function() {
+        twitter.classList.add("icon-deactive");
+        linkedin.classList.add("icon-deactive");
+    });
+
+    ig.addEventListener("mouseout", function() {
+        twitter.classList.remove("icon-deactive");
+        linkedin.classList.remove("icon-deactive");
+    });
+
+    // linkedin
+    linkedin.addEventListener("mouseenter", function() {
+        ig.classList.add("icon-deactive");
+        twitter.classList.add("icon-deactive");
+    });
+
+    linkedin.addEventListener("mouseout", function() {
+        ig.classList.remove("icon-deactive");
+        twitter.classList.remove("icon-deactive");
+    });
+
 </script>
 </html>
