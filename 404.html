@@ -41,22 +41,30 @@
         img {
             mix-blend-mode: color-burn;
         }
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 5rem !important;
+            }
+            img {
+                width: 120px !important;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
     <div class="relative flex items-center h-fit min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
         <div class="w-10/12 max-w-7xl mx-auto p-6 lg:p-8 items-center content-center">
             <div class="flex items-center relative w-max mx-auto relative">
-                <h1 class="circle font-extrabold text-center sm:text-48">
+                <h1 class="circle font-extrabold text-center">
                     4
                 </h1>
                 <img src="https://framerusercontent.com/images/bIzb6p8QOQ6HCo6ClaLMCtc0wA.gif" alt="404" class="w-60 mx-5">
-                <h1 class="circle font-extrabold text-center sm:text-48">
+                <h1 class="circle font-extrabold text-center">
                     4
                 </h1>
             </div>
             <div class="text-center">
-                <h2 class="text-xl font-extrabold w-96 mx-auto mb-3 text-gray-400 py-5" style="font-family: 'Roboto'">
+                <h2 class="text-xl space-x-5 font-semi mx-auto mb-3 text-gray-400 py-5" style="font-family: 'Roboto'">
                     The page you are looking for doesn't exist or has been moved.
                 </h2>
                 <a href="https://zakacoding.github.io" class="text-center font-bold rounded border-2 focus-ring border-black p-2 dark:text-white hover:bg-slate-900 hover:text-white">Go back to homepage</a>
