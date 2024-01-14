@@ -1,13 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 7em;
+  padding: 0.5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -16,6 +19,11 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.frame {
+  background-image: url('../src/assets/image/device.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @keyframes logo-spin {
@@ -36,6 +44,11 @@
 .card {
   padding: 2em;
 }
+
+.card:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
 
 .read-the-docs {
   color: #888;
